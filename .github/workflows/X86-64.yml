@@ -272,13 +272,13 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-    - name: Telegram notification
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: |
-          编译时间：${{ env.DATE }}
-          lede更新信息：${{ env.useVersionInfo }}
-          ${{ env.PRODUCT_NAME }}编译完成        
+    #    
+    #- name: Telegram notification
+    #  uses: appleboy/telegram-action@master
+    #  with:
+    #    to: ${{ secrets.TELEGRAM_TO }}
+    #    token: ${{ secrets.TELEGRAM_TOKEN }}
+    #    message: |
+    #      编译时间：${{ env.DATE }}
+    #      lede更新信息：${{ env.useVersionInfo }}
+    #      ${{ env.PRODUCT_NAME }}编译完成        
